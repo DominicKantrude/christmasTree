@@ -1,7 +1,12 @@
 document.querySelector("#submit").addEventListener("click", function(){
    let height= document.querySelector("#height").value
     let char = document.querySelector("#char").value
+    if(char.length === 1){
+  
     printChristmasTree(height, char)
+    }else{
+        console.log("Must be one character")
+    }
 })
 
 
